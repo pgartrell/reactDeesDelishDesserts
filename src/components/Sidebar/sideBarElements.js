@@ -1,87 +1,89 @@
-import styled from 'styled-components';
-import {Link} from'react-router-dom';
-import {FaTimes} from 'react-icons/fa';
+//*****NOT IN USE
 
-export const SidebarContainer = styled.aside `
-    position: fixed;
-    z-index: 999;
-    width: 200px;
-    height: 100% 100vh;
-    background: #ffc500;
-    display: grid;
-    align-items: center;
-    top:0;
-    transition: 0.3s ease-in-out;
-    right: ${({isOpen}) => (isOpen ? '0' : '-1000')};
+// import styled from 'styled-components';
+// import {Link} from'react-router-dom';
+// import {FaTimes} from 'react-icons/fa';
 
-    @media screen and (max-width: 400px){
-        width: 100%;
-    }
-`;
+// export const SidebarContainer = styled.aside `
+//     position: fixed;
+//     z-index: 999;
+//     width: 200px;
+//     height: 100% 100vh;
+//     background: #ffc500;
+//     display: grid;
+//     align-items: center;
+//     top:0;
+//     transition: 0.3s ease-in-out;
+//     right: ${({isOpen}) => (isOpen ? '0' : '-1000')};
 
-export const CloseIcon = styled(FaTimes)`
-    color: #000;
-`
+//     @media screen and (max-width: 400px){
+//         width: 100%;
+//     }
+// `;
 
-export const Icon = styled.div `
-    position: absolute;
-    top: 1.2rem;
-    right: 1.5rem;
-    border: transparent;
-    background: transparent;
-    font-size: 2rem;
-    cursor: pointer;
-    outline: none;
-`
+// export const CloseIcon = styled(FaTimes)`
+//     color: #000;
+// `
 
-export const SidebarMenu = styled.div`
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 80px);
-    text-align: center;
+// export const Icon = styled.div `
+//     position: absolute;
+//     top: 1.2rem;
+//     right: 1.5rem;
+//     border: transparent;
+//     background: transparent;
+//     font-size: 2rem;
+//     cursor: pointer;
+//     outline: none;
+// `
 
-    @media screen and (max-width: 480px) {
-        grid-template-rows: repeat(3, 60px);
-    }
-`;
-export const SidebarLink = styled(Link) `
-    display: flex;
-    align-items: center;
-    content: center; 
-    font-size: 1.5rem;
-    text-decoration: none;
-    list-style: none;
-    transition: 0.2s, ease-in-out;
-    text-decoration : none;
-    color: #000;
-    cursor: pointer;
+// export const SidebarMenu = styled.div`
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-template-rows: repeat(3, 80px);
+//     text-align: center;
 
-    &:hover {
-        color: #e31837;
-        transition: 0.2s ease-in-out;
-    }
-`;
+//     @media screen and (max-width: 480px) {
+//         grid-template-rows: repeat(3, 60px);
+//     }
+// `;
+// export const SidebarLink = styled(Link) `
+//     display: flex;
+//     align-items: center;
+//     content: center; 
+//     font-size: 1.5rem;
+//     text-decoration: none;
+//     list-style: none;
+//     transition: 0.2s, ease-in-out;
+//     text-decoration : none;
+//     color: #000;
+//     cursor: pointer;
 
-export const SideBtnWrap = styled.div `
-    display: flex;
-    justify-content: center;    
-`
+//     &:hover {
+//         color: #e31837;
+//         transition: 0.2s ease-in-out;
+//     }
+// `;
 
-export const SidebarRoute = styled(Link)`
-    background: #e31837;
-    white-space: nowrap;
-    padding: 16px, 64px;
-    color:#fff;
-    font-size: 16px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-    text-decoration: none;
+// export const SideBtnWrap = styled.div `
+//     display: flex;
+//     justify-content: center;    
+// `
 
-    &:hover{
-        transition: 0.2s ease-in-out;
-        background: #fff;
-        color:#010606;
-    }
-`
+// export const SidebarRoute = styled(Link)`
+//     background: #e31837;
+//     white-space: nowrap;
+//     padding: 16px, 64px;
+//     color:#fff;
+//     font-size: 16px;
+//     outline: none;
+//     border: none;
+//     cursor: pointer;
+//     transition: 0.2s ease-in-out;
+//     text-decoration: none;
+
+//     &:hover{
+//         transition: 0.2s ease-in-out;
+//         background: #fff;
+//         color:#010606;
+//     }
+// `

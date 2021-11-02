@@ -1,15 +1,26 @@
 import React from "react";
-import { Nav, NavLink, NavIcon, Bars } from './NavbarElements'
+import { Nav, NavLink, Bars, NavMenu} from './NavbarElements'
 
 const NavbarComponent = ({toggle}) => {
   return (
       <React.Fragment>
         <Nav>
-          <NavLink to="/">Dees Deslish Desserts</NavLink>
-          <NavIcon onClick={toggle}>            
-            <Bars />
-          </NavIcon>
-        </Nav>
+          <Bars />          
+          <NavMenu>            
+            <NavLink to='/About' activeStyle>
+              About
+            </NavLink>
+            <NavLink to='/Gallery' activeStyle>
+              Gallery
+            </NavLink>
+            <NavLink to='/Events' activeStyle>
+              Events
+            </NavLink>
+            <NavLink to='/Contactme' activeStyle>
+              Contact Me
+            </NavLink>           
+          </NavMenu>
+      </Nav>
       </React.Fragment>
   );
 };

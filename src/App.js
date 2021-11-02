@@ -6,6 +6,7 @@ import Products from './components/Products/products'
 import {productData} from './components/Products/data'
 import Feature from './components/Feature/feature'
 import Footer from './components/Footer/footer';
+import Routes from './components/routes'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Products heading='Pick a side' data={productData}/>
       <Feature />
       <Footer />
+      {/* <Routes /> */}
     </Router>
   );
 }

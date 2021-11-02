@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Sidebar from "../Sidebar/sideBar";
+import Logo from "../Logo/logo"
 import NavbarComponent from "../Navbar/navBar";
 import {
   HeroContainer,
@@ -9,7 +9,7 @@ import {
   HeroP,
   HeroBtn,
 } from "./heroElements";
-//import Navbar from '../Navbar/navBar';
+
 
 const Hero = () => {
     const[isOpen, setIsOpen] = useState(false)
@@ -19,17 +19,27 @@ const Hero = () => {
     }
 
   return (
-    <HeroContainer>
-      <NavbarComponent toggle={toggle} />
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <HeroContent>
-        <HeroItems>
-          <HeroH1>For Complete Sweet Relief Come See Dee</HeroH1>
-          <HeroP>Something about Dee</HeroP>
-          <HeroBtn>Request Services</HeroBtn>
-        </HeroItems>
-      </HeroContent>
-    </HeroContainer>
+    <div>
+      <HeroContainer>
+        <div>
+          <div className="col">
+            <Logo  />             
+          </div> 
+          <div className ="col">
+            <NavbarComponent toggle={toggle} />
+          </div>
+        </div>
+        <div>   
+          <HeroContent>
+            <HeroItems>
+              <HeroH1>Dees Delish Desserts</HeroH1>
+              <HeroP>For Complete Sweet Relief Come See Dee</HeroP>
+              <HeroBtn>Make an Order</HeroBtn>
+            </HeroItems>
+          </HeroContent>       
+        </div>
+      </HeroContainer>
+    </div>
   );
 };
 
